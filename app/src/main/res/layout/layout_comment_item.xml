@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/tv_send_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shanliao"
+            android:textColor="@color/button_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_flag_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="5dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_receive_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="king"
+            android:textColor="@color/button_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_comment_payload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="多数的Android应用都会出现内容尺寸超出屏幕的情况。比如一则新闻页，有配图，在配图下可以点击按钮了解更多，有标题，最后是全部的新闻内容，假设这则内容是勇士打败骑士队后詹姆斯又跑去哪里抱大腿的新闻。那么ListView显然不是最好的选择，但是一般的Layout，比如LinearLayout、RelativeLayout或者FrameLayout之类Layout也没法用。最后就只有ScrollView可以解决问题了。"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

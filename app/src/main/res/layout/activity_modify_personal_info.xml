@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_text_white"
+        android:orientation="vertical"
+        android:elevation="8dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp">
+
+            <RelativeLayout
+                android:id="@+id/btn_category_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改个人信息"
+                    android:textColor="@color/title_black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="19sp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_done_personal_info"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/select_ico" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_head_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_option_white"
+        android:elevation="9dp">
+
+        <TextView
+            android:id="@+id/tv_flag_head_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_marginVertical="20dp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/default_head_icon"
+            android:layout_width="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_height="45dp"
+            android:layout_marginVertical="20dp"
+            android:background="@color/white"/>
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/pointer_to_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_collect_mail_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_option_white"
+        android:elevation="9dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_neck_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_flag_neck_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="邮名"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginVertical="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_neck_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="喜欢吃干脆面的糖"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="35dp"
+                android:maxWidth="230dp"
+                android:layout_marginVertical="20dp"/>
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/pointer_to_right"
+                android:layout_alignTop="@id/tv_flag_neck_name"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+
+
+        <View
+            android:id="@+id/view_dl_0"
+            android:layout_below="@id/rl_neck_name"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/input_gray"/>
+
+        <RelativeLayout
+            android:layout_below="@id/view_dl_0"
+            android:id="@+id/rl_personal_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_flag_slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="个性签名"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginVertical="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_flag_slogan"
+                android:text="What can I do for you ?What can I do for you ?What can I do for you ?"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="35dp"
+                android:maxWidth="230dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/pointer_to_right"
+                android:layout_alignTop="@id/tv_slogan"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/view_dl_1"
+            android:layout_below="@id/rl_personal_slogan"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/input_gray"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_birthday"
+            android:layout_below="@id/view_dl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_flag_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="生日"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginVertical="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_birthday_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023年3月17日"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="35dp"
+                android:layout_marginVertical="20dp"/>
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/pointer_to_right"
+                android:layout_alignTop="@id/tv_flag_birthday"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+
+
+        <View
+            android:id="@+id/view_dl_2"
+            android:layout_below="@id/rl_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/input_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_receive_time"
+            android:layout_below="@id/view_dl_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_flag_receive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="信件接收时间"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginVertical="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_receive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每天 05:20"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:layout_marginRight="35dp"
+                android:layout_marginVertical="20dp"/>
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/pointer_to_right"
+                android:layout_alignTop="@id/tv_flag_receive_time"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/view_dl_3"
+            android:layout_below="@id/rl_receive_time"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/input_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_space_image"
+            android:layout_below="@id/view_dl_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_flag_space_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="修改个性相片"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginVertical="20dp"/>
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/pointer_to_right"
+                android:layout_alignTop="@id/tv_flag_space_time"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_option_white">
+
+    <TextView
+        android:id="@+id/tv_inner_title_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="信件类型"
+        android:layout_marginVertical="20dp"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/input_gray"
+        android:layout_below="@id/tv_inner_title_select"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_access_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="15dp"
+        android:layout_below="@id/tv_inner_title_select"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbt_access_private"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="私密"
+            android:background="@drawable/selector_choice"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="2dp"/>
+        <RadioButton
+            android:id="@+id/rbt_access_public"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/selector_choice"
+            android:text="公开"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:elevation="2dp"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/rg_access_flag"/>
+
+
+
+
+</RelativeLayout>

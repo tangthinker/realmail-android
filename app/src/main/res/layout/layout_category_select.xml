@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_category_select"
+    android:layout_marginBottom="5dp"
+    android:layout_centerHorizontal="true"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/personal_list"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/btn_1"
+            android:text="个人信件"
+            android:layout_marginVertical="18dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/title_black"/>
+
+        <ImageView
+            android:id="@+id/iv_personal_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_ico"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="3dp"
+        android:background="@color/divide_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_public_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/public_list"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/btn_2"
+            android:text="公开信件"
+            android:layout_marginVertical="18dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/title_black"/>
+
+        <ImageView
+            android:id="@+id/iv_public_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_ico"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="3dp"
+        android:background="@color/divide_line"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_star_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/star_list"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/btn_3"
+            android:text="加星信件"
+            android:layout_marginVertical="18dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/title_black"/>
+
+        <ImageView
+            android:id="@+id/iv_star_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_ico"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

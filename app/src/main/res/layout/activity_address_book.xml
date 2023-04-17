@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_text_white"
+        android:orientation="vertical"
+        android:elevation="8dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="邮友录"
+                    android:textAlignment="center"
+                    android:textColor="@color/title_black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+
+                <Button
+                    android:id="@+id/btn_add_address_book"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/address_book_add_icon" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_address_book_empty_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/address_book_empty_icon"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="这里暂时是空的哦"
+                    android:textColor="@color/empty_gray"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+
+            <work.tangthinker.realmail.special.AutoListView
+                android:id="@+id/lv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/divide_line"
+                android:dividerHeight="0.7dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
