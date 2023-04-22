@@ -54,6 +54,12 @@ class SettingActivity : AppCompatActivity() {
             overridePendingTransition(R.anim.setting_open, R.anim.bottom_silent)
         }
 
+        binding.rlModifyPassword.setOnClickListener {
+            val intent = Intent(this, ModifyPasswordLoginActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.setting_open, R.anim.bottom_silent)
+        }
+
         binding.rlCollectMailId.setOnClickListener {
             val intent = Intent(this, AddressBookActivity::class.java)
             startActivity(intent)

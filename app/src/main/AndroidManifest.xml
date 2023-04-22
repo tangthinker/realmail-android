@@ -48,6 +48,9 @@
             android:name=".ModifyPasswordActivity"
             android:exported="true"
             android:theme="@style/Theme.RealMail.NoActionBar" />
+        <activity android:name=".ModifyPasswordLoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RealMail.NoActionBar" />
         <activity
             android:name=".PersonalSpaceActivity"
             android:exported="true"
