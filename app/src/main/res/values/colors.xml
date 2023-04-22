@@ -25,4 +25,5 @@
     <color name="edit_or_tips_dialog_button_gray">#f5f5f5</color>
     <color name="edit_or_tips_dialog_title_gray">#636363</color>
     <color name="empty_gray">#d8d8d8</color>
+    <color name="github_blue">#0969da</color>
 </resources>

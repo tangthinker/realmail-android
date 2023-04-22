@@ -76,6 +76,9 @@
         <activity android:name="com.yalantis.ucrop.UCropActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.RealMail.NoActionBar"/>
+        <activity android:name=".AboutActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RealMail.NoActionBar" />
     </application>
 
 </manifest>
