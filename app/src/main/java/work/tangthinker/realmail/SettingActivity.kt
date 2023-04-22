@@ -81,7 +81,7 @@ class SettingActivity : AppCompatActivity() {
         binding.rlAboutApp.setOnClickListener {
             var intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
-            overridePendingTransition(R.anim.setting_open, R.anim.bottom_silent)
+            overridePendingTransition(R.anim.horizontal_open, R.anim.bottom_silent)
         }
 
 
